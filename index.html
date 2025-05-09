@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuru Youth Waste Management</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadPreferences()">
+    <h1>Welcome to Nuru Youth Waste Management Website</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Our Services</h2>
+    <ol type="I">
+        <li>Beach & Community clean-ups</li>
+        <li>waste recycling & value addition</li>
+        <li>Creating awareness</li>
+        <li>Community health & policing</li>
+        <li>Cleaning services & waste services</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Sample abandoned dumping site</h2>
+    <img src="waste.jpg" alt="Image of a waste dumping site" width="600" />
+    <img src="site.jpg" alt="Image of another waste dumping site" width="600" />
+
+    <!-- Table of Contacts -->
+    <h2>Our Management Contact</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Isaac John</td>
+            <td>4321 likoni, Mombasa</td>
+            <td>+254723108309</td>
+            <td>ceo@nuruyouthwastemanagement.com</td>
+        </tr>
+        <tr>
+            <td>Hussein Kuwania</td>
+            <td>4321 likoni, Mombasa</td>
+            <td>+254793535754</td>
+            <td>coo@nuruyouthwastemanagement.com</td>
+        </tr>
+        <tr>
+            <td>Said Zibodo</td>
+            <td>4321 likoni, Mombasa</td>
+            <td>+254780879261</td>
+            <td>md@nuruyouthwastemanagement.com</td>
+        </tr>
+        <tr>
+            <td>Hamisi Hamadi</td>
+            <td>4321 likoni, Mombasa</td>
+            <td>+25410401980</td>
+            <td>crp@nuruyouthwastemanagement.com</td>
+        </tr>
+        <tr>
+            <td>Marwa Omar</td>
+            <td>4321 likoni, Mombasa</td>
+            <td>+254742270084</td>
+            <td>qa@nuruyouthwastemanagement.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <form action="submit_form.php" method="POST">
+        <fieldset>
+            <legend>Register for Our Services</legend>
+
+            <!-- Name Field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+            <!-- Date of Service Field -->
+            <label for="service-date">Service Date:</label><br>
+            <input type="date" id="service-date" name="service-date" required><br><br>
+
+            <!-- Gender Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="organisation" name="gender" value="organisation">
+                <label for="organisation">Organisation</label><br><br>
+            </fieldset>
+
+            <!-- Residence Dropdown -->
+            <label for="Residence">Select your Residence:</label><br>
+            <select id="Residence" name="Residence" required>
+                <option value="">Please select your Residence</option>
+                <option value="Majengo Mapya">Majengo Mapya</option>
+                <option value="Pungu Villa">Pungu Villa</option>
+                <option value="Shelly Beach">Shelly Beach</option>
+                <option value="Beach Management Unit">Beach Management Unit</option>
+                <option value="Kenya Ferry">Kenya Ferry</option>
+            </select><br><br>
+
+            <!-- Interests Checkboxes -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="clean-up" name="interests" value="clean-up">
+                <label for="clean-up">Clean-up</label><br>
+                <input type="checkbox" id="waste-services" name="interests" value="waste services">
+                <label for="waste-services">Waste Services</label><br>
+                <input type="checkbox" id="community-awareness" name="interests" value="community awareness">
+                <label for="community-awareness">Community Awareness</label><br>
+                <input type="checkbox" id="value-addition" name="interests" value="value addition">
+                <label for="value-addition">Value Addition</label><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+</html>
